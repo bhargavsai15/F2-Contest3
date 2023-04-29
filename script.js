@@ -74,6 +74,8 @@ document.addEventListener('DOMContentLoaded', async ()=> {
     try {
         const menuDetails = await getMenu();
         loadMenuDetails(menuDetails);
+        console.log("Menu:")
+        console.log(menuDetails);
         const order = await takeOrder();
         console.log("Order:", order);
         const preparationStatus = await orderPrep();
