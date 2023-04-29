@@ -61,6 +61,8 @@ function thankyouFnc() {
 document.addEventListener('DOMContentLoaded', async () => {
     const menuDetails = await getMenu();
     loadMenuDetails(menuDetails);
+    console.log("Menu:")
+    console.log(menuDetails);
     takeOrder().
         then(function (orderDetails) {
         console.log("Order details: ",orderDetails);
